@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://13.233.83.96:9000/</sonar.host.url>
+		<sonar.host.url>http://35.154.62.70:9000/</sonar.host.url>
 		<sonar.login>squ_1e29d6084f6066443ab7d7cda9549a63be4b6849</sonar.login>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://15.206.80.246:8081/repository/tmobile-release-repo/</url>
+	      <url>http://43.205.212.1:8081/repository/tmobile-release-repo/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://15.206.80.246:8081/repository/tmobile-snapshot-repo/</url>
+	      <url>http://43.205.212.1:8081/repository/tmobile-snapshot-repo/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
