@@ -1,5 +1,7 @@
 pipeline { //pipeline opening 
 
+properties([parameters([choice(choices: ['development', 'master'], description: 'please enter the branch name', name: 'BranchName')])])
+
 tools {
 
 maven "maven3.9.0"
@@ -16,7 +18,7 @@ steps {
 
 sendSlackNotifications('STARTED')
 
-git branch: 'development', credentialsId: '2b3533b2-2eb0-4b48-98c5-87b7ad40c9b7', url: 'https://github.com/JashuwaJioTechnologies/maven-web-application.git'
+  git branch: "${BranchName}", credentialsId: '2b3533b2-2eb0-4b48-98c5-87b7ad40c9b7', url: 'https://github.com/JashuwaJioTechnologies/maven-web-application.git'
 
 }
 
