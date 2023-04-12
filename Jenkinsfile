@@ -1,6 +1,8 @@
 pipeline { //pipeline opening 
   
-properties([parameters([choice(choices: ['development', 'master'], description: 'please enter the branch name', name: 'BranchName')])])
+parameters {
+  choice choices: ['development', 'master'], description: 'please enter the branch name', name: 'BranchName'
+}
 
 tools {
 
